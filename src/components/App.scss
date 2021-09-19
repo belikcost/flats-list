@@ -1,0 +1,32 @@
+.app {
+  header {
+    margin-bottom: 3rem;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  &_loading {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.flats-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem 2rem;
+
+}
+
+@media screen and (max-width: 800px) {
+  .flats-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .flats-list {
+    grid-template-columns: 1fr;
+  }
+}

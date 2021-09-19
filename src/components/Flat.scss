@@ -1,0 +1,10 @@
+.flat {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 20px;
+      cursor: pointer;
+    }
+  }
+}
